@@ -47,7 +47,7 @@ namespace NFlappyBird {
         auto boxPhysicsMenuItem = MenuItemLabel::create(
             boxPhysicsMenuItemLabel,
             [&](Ref *sender){
-                auto scene = TCustomPhysicsGameScene::createScene();
+                auto scene = TBoxPhysicsGameScene::createScene();
                 Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
             }
         );

@@ -1,14 +1,13 @@
 #pragma  once
 
 #include "cocos2d.h"
+#include "BoxPhysicsGameScene.h"
 
 class  AppDelegate : private cocos2d::Application
 {
 public:
     AppDelegate();
     virtual ~AppDelegate();
-
-    void initGLContextAttrs() override final;
 
     bool applicationDidFinishLaunching() override final;
 

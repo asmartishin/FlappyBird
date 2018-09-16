@@ -4,6 +4,7 @@
 
 #include "Const.h"
 #include "CustomPhysicsGameScene.h"
+#include "BoxPhysicsGameScene.h"
 
 namespace NFlappyBird {
     class TMainMenuScene : public cocos2d::Layer {

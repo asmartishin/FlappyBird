@@ -12,7 +12,7 @@ namespace NFlappyBird {
     protected:
         const float GapWidth;
         const float GapHeight;
-        virtual void applyPhysics(TNode& node) override;
+        virtual void ApplyPhysics(TNode &node) override;
     };
 
     class TTopPipe final: public TPipe {
@@ -34,6 +34,6 @@ namespace NFlappyBird {
         TTarget(cocos2d::Size windowSize);
     private:
         TNode InitNode(const cocos2d::Vec2& position) override final;
-        void applyPhysics(TNode& node) override final;
+        void ApplyPhysics(TNode& node) override final;
     };
 }

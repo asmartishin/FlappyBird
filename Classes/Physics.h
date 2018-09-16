@@ -44,7 +44,7 @@ namespace NFlappyBird {
         virtual cocos2d::Node* Spawn(const cocos2d::Vec2& position) = 0;
     protected:
         virtual TNode InitNode(const cocos2d::Vec2& position) = 0;
-        virtual void applyPhysics(TNode& node) = 0;
+        virtual void ApplyPhysics(TNode &node) = 0;
     };
 
     class TPhysics: public IPhysics {

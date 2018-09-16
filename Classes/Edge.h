@@ -11,6 +11,6 @@ namespace NFlappyBird {
         TEdge(cocos2d::Size windowSize);
     private:
         TNode InitNode(const cocos2d::Vec2& position) override final;
-        void applyPhysics(TNode &node) override final;
+        void ApplyPhysics(TNode &node) override final;
     };
 };

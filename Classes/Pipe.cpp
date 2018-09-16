@@ -10,7 +10,7 @@ namespace NFlappyBird {
     {
     }
 
-    void TPipe::applyPhysics(TNode& node) {
+    void TPipe::ApplyPhysics(TNode &node) {
         auto physicsBody = PhysicsBody::createBox(node.Size());
 
         physicsBody->setDynamic(false);
@@ -75,7 +75,7 @@ namespace NFlappyBird {
         return node;
     }
 
-    void TTarget::applyPhysics(TNode& node) {
+    void TTarget::ApplyPhysics(TNode& node) {
         auto physicsBody = PhysicsBody::createBox(node.Size());
 
         physicsBody->setDynamic(false);

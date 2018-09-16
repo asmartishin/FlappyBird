@@ -10,7 +10,7 @@ namespace NFlappyBird {
 
     Node* TPhysics::Spawn(const Vec2& position) {
         auto node = InitNode(position);
-        applyPhysics(node);
+        ApplyPhysics(node);
 
         return node.Get();
     }

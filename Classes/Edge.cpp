@@ -16,7 +16,7 @@ namespace NFlappyBird {
         return node;
     }
 
-    void TEdge::applyPhysics(TNode &node) {
+    void TEdge::ApplyPhysics(TNode &node) {
         auto physicsBody = PhysicsBody::createEdgeBox(WindowSize);
 
         physicsBody->setDynamic(false);

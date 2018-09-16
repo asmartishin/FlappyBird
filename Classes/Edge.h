@@ -6,7 +6,7 @@
 #include "Const.h"
 
 namespace NFlappyBird {
-    class TEdge: public TPhysics {
+    class TEdge final: public TPhysics {
     public:
         TEdge(cocos2d::Size windowSize);
     private:

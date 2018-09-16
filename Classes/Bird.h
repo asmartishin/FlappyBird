@@ -6,7 +6,7 @@
 #include "Const.h"
 
 namespace NFlappyBird {
-    class TBird: public TPhysics {
+    class TBird final: public TPhysics {
     public:
         TBird(cocos2d::Size windowSize);
 

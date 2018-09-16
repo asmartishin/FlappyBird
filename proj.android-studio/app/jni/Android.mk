@@ -13,12 +13,14 @@ LOCAL_MODULE_FILENAME := libMyGame
 
 LOCAL_SRC_FILES := $(LOCAL_PATH)/hellocpp/main.cpp \
                    $(LOCAL_PATH)/../../../Classes/AppDelegate.cpp \
-		   $(LOCAL_PATH)/../../../Classes/GameScene.cpp \
                    $(LOCAL_PATH)/../../../Classes/Physics.cpp \
                    $(LOCAL_PATH)/../../../Classes/Pipe.cpp \
                    $(LOCAL_PATH)/../../../Classes/Bird.cpp \
                    $(LOCAL_PATH)/../../../Classes/Edge.cpp \
-                   $(LOCAL_PATH)/../../../Classes/MenuScene.cpp
+                   $(LOCAL_PATH)/../../../Classes/MainMenuScene.cpp \
+                   $(LOCAL_PATH)/../../../Classes/AbstractGameScene.cpp \
+                   $(LOCAL_PATH)/../../../Classes/CustomPhysicsGameScene.cpp \
+                   $(LOCAL_PATH)/../../../Classes/BoxPhysicsGameScene.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes
 

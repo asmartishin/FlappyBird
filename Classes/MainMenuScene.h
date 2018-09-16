@@ -3,17 +3,15 @@
 #include "cocos2d.h"
 
 #include "Const.h"
-#include "GameScene.h"
+#include "CustomPhysicsGameScene.h"
 
 namespace NFlappyBird {
-    class MenuScene : public cocos2d::Layer {
+    class TMainMenuScene : public cocos2d::Layer {
     public:
         static cocos2d::Scene* createScene();
 
         bool init() override final;
 
-        CREATE_FUNC(MenuScene);
-    private:
-        void ToGameScene(cocos2d::Ref* sender);
+        CREATE_FUNC(TMainMenuScene);
     };
 }

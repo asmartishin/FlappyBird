@@ -15,21 +15,21 @@ namespace NFlappyBird {
         virtual void applyPhysics(TNode& node) override;
     };
 
-    class TTopPipe: public TPipe {
+    class TTopPipe final: public TPipe {
     public:
         TTopPipe(cocos2d::Size windowSize);
     private:
         TNode InitNode(const cocos2d::Vec2& position) override final;
     };
 
-    class TBottomPipe: public TPipe {
+    class TBottomPipe final: public TPipe {
     public:
         TBottomPipe(cocos2d::Size windowSize);
     private:
         TNode InitNode(const cocos2d::Vec2& position) override final;
     };
 
-    class TTarget: public TPipe {
+    class TTarget final: public TPipe {
     public:
         TTarget(cocos2d::Size windowSize);
     private:

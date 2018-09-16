@@ -8,9 +8,9 @@ namespace NFlappyBird {
     constexpr float BIRD_SIZE = 0.054;
     constexpr float BIRD_HORIZONTAL_OFFSET = 0.1;
     constexpr float BIRD_VERTICAL_OFFSET = 0.9; // from bottom
-    constexpr float BIRD_FLY_DURATION = 0.36;
+    constexpr float BIRD_FLY_DURATION = 0.31;
     constexpr float BIRD_FALL_SPEED = 0.01;
-    constexpr float BIRD_GRAVITY_FORCE = BIRD_FALL_SPEED / 5;
+    constexpr float BIRD_GRAVITY_FORCE = BIRD_FALL_SPEED / 4.6;
     constexpr float PIPE_SPAWN_FREQUENCY = 1.4; // less is more often
     constexpr float PIPE_MOVE_SPEED = 4; // less is faster
     constexpr float PIPE_WIDTH = 0.085;

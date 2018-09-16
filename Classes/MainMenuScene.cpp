@@ -1,26 +1,25 @@
-#include "MenuScene.h"
+#include "MainMenuScene.h"
 
 using namespace cocos2d;
 
 namespace NFlappyBird {
-    Scene *MenuScene::createScene() {
+    Scene* TMainMenuScene::createScene() {
         auto scene = Scene::create();
 
-        auto layer = MenuScene::create();
+        auto layer = TMainMenuScene::create();
 
         scene->addChild(layer);
 
         return scene;
     }
 
-    bool MenuScene::init() {
+    bool TMainMenuScene::init() {
         if (!Layer::init()) {
             return false;
         }
 
         auto director = Director::getInstance();
 
-        director->setDisplayStats(false);
         auto windowSize = director->getWinSize();
         auto origin = director->getVisibleOrigin();
 
@@ -36,7 +35,7 @@ namespace NFlappyBird {
         auto customPhysicsMenuItem = MenuItemLabel::create(
             customPhysicsMenuItemLabel,
             [&](Ref *sender){
-                auto scene = GameScene::createScene();
+                auto scene = TCustomPhysicsGameScene::createScene();
                 Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
             }
         );
@@ -48,7 +47,7 @@ namespace NFlappyBird {
         auto boxPhysicsMenuItem = MenuItemLabel::create(
             boxPhysicsMenuItemLabel,
             [&](Ref *sender){
-                auto scene = GameScene::createScene();
+                auto scene = TCustomPhysicsGameScene::createScene();
                 Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
             }
         );

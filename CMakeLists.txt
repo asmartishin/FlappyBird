@@ -162,7 +162,10 @@ set(GAME_SRC
         Classes/Pipe.cpp
         Classes/Bird.cpp
         Classes/Edge.cpp
-        Classes/MenuScene.cpp
+        Classes/MainMenuScene.cpp
+        Classes/AbstractGameScene.cpp
+        Classes/CustomPhysicsGameScene.cpp
+        Classes/BoxPhysicsGameScene.cpp
         )
 
 set(GAME_HEADERS
@@ -174,7 +177,10 @@ set(GAME_HEADERS
         Classes/Pipe.h
         Classes/Bird.h
         Classes/Edge.h
-        Classes/MenuScene.h
+        Classes/MainMenuScene.h
+        Classes/AbstractGameScene.h
+        Classes/CustomPhysicsGameScene.h
+        Classes/BoxPhysicsGameScene.h
         )
 
 # add the executable
